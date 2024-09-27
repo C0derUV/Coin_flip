@@ -1,0 +1,345 @@
+@media screen and (max-width: 1366px) {
+      .header-main {
+            padding: 20px 0px;
+      }
+
+      .hero-img {
+            height: 300px;
+            max-width: 300px;
+      }
+
+      .timer-flex .time-label {
+            font-size: 19px;
+            line-height: 22px
+      }
+
+      .last-winner-img {
+            height: 180px;
+            max-width: 180px;
+      }
+
+      .last-winner-col .last-winner-percentages {
+            font-size: 32px;
+            line-height: 41px;
+      }
+
+      .last-winner-col .last-winner-name,
+      .last-winner-col .last-winner-text,
+      .recent-left-content-main .recent-text,
+      .footer-nav-item .footer-nav-link {
+            font-size: 18px;
+            line-height: 22px;
+      }
+
+      .hero-cards-main {
+            margin: 100px 0px;
+      }
+
+      .last-winner-section {
+            padding: 0px 0px 100px;
+      }
+
+      .recent-plays-section {
+            padding: 0px 0px 100px;
+      }
+
+      .footer-main {
+            padding: 25px 0px;
+      }
+
+      .timer-flex .time-text {
+            font-size: 85px;
+            line-height: 100px;
+            width: 52px;
+      }
+
+      .time-box {
+            width: 110px;
+      }
+
+      .colon-img {
+            height: 45px;
+            width: 13px;
+      }
+
+      .last-digit-wrapper {
+            height: 100px;
+      }
+
+      .hero-content-main .hero-heading {
+            font-size: 49px;
+            line-height: 62px;
+      }
+
+      .hero-btn-main .hero-btn,
+      .hero-btn-main .hero-btn:hover {
+            padding: 20px 30px;
+            font-size: 32px;
+            line-height: 40px;
+      }
+
+      .hero-cards {
+            height: 300px;
+      }
+
+      .hero-cards .hero-card-digit {
+            font-size: 74px;
+            line-height: 80px;
+      }
+}
+
+@media screen and (max-width: 1023px) {}
+
+
+@media screen and (max-width: 991px) {
+      .container {
+            padding: 0px 33px;
+      }
+
+      .hero-section .container {
+            padding: 0px 23px;
+      }
+
+      .icon-wrapper {
+            display: none;
+      }
+
+      .hero-cards-main {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin: 89px 0px 86px;
+      }
+
+      .hero-content-main .hero-heading {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 12px;
+      }
+
+      .hero-content-main .hero-para {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 40px;
+      }
+
+      .timer-flex .time-text {
+            font-size: 53px;
+            line-height: 60px;
+            width: auto;
+      }
+
+      .time-box {
+            width: initial;
+      }
+
+      .last-digit-wrapper {
+            height: 60px;
+      }
+
+      .header-row {
+            justify-content: center;
+      }
+
+      .header-main {
+            padding: 13px 0px;
+      }
+
+      .hero-section {
+            padding: 70px 0px 0px;
+      }
+
+      .colon-img {
+            height: 41px;
+      }
+
+      .timer-flex {
+            gap: 29px;
+            margin-bottom: 40px;
+      }
+
+      .hero-img {
+            height: 269px;
+            max-width: 251px;
+      }
+
+      .hero-btn-main .hero-btn,
+      .hero-btn-main .hero-btn:hover {
+            padding: 25px;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0px 30px;
+      }
+
+      .hero-icon-main {
+            display: block;
+            margin-top: 65px;
+      }
+
+      .hero-icon-main .icon-wrapper {
+            display: block;
+      }
+
+      .icon-flex {
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 15px;
+      }
+
+      .icon-flex:last-child {
+            margin-bottom: 0;
+      }
+
+      .hero-cards {
+            height: 271px;
+      }
+
+      .last-winner-row {
+            gap: 54px;
+            padding: 50px 0px 0px 0px;
+      }
+
+      .hero-cards .hero-card-digit {
+            font-size: 80px;
+            line-height: 96px;
+            margin-bottom: 34px;
+      }
+
+      .last-winner-col {
+            max-width: 180px;
+      }
+
+      .recent-plays-section {
+            padding: 0px 0px 30px;
+      }
+
+      .recent-img {
+            height: 53px;
+            width: 53px;
+      }
+
+      .recent-left-content-main .recent-text {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 171px;
+            width: 100%;
+      }
+
+      .recent-right-content-main .recent-time-text {
+            font-size: 12px;
+            line-height: 14px;
+      }
+
+      .footer-nav-item .footer-nav-link {
+            font-size: 12px;
+            line-height: 14px;
+      }
+
+      .footer-main {
+            padding: 30px 0px;
+      }
+
+      .footer-nav .footer-nav-item {
+            margin: 0 7px;
+      }
+
+      .footer-nav .footer-nav-item::after {
+            right: -17px;
+            height: 12px;
+      }
+
+      .section-heading-main .section-heading {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 14px;
+      }
+
+      .recent-plays-main {
+            padding-top: 38px;
+      }
+
+      .recent-left-content-main {
+            gap: 16px;
+      }
+
+      .timer-flex .time-label {
+            font-size: 13px;
+            line-height: 25px;
+      }
+
+      .last-winner-section {
+            padding: 0px 0px 84px;
+      }
+}
+
+@media screen and (max-device-width: 1023px) and (orientation : landscape) {}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {}
+
+
+@media (max-width: 767px) {
+      .last-winner-col{
+            max-width: 100%;
+      }
+
+      .hero-btn-main .hero-btn,
+      .hero-btn-main .hero-btn:hover {
+            width: 100%;
+      }
+
+      .hero-cards-main {
+            grid-template-columns: repeat(1, 1fr);
+      }
+
+      .footer-row .footer-nav {
+            gap: 10px;
+      }
+
+      .footer-nav .footer-nav-item::after {
+            right: -13px;
+      }
+
+      .timer-flex {
+            gap: 20px;
+      }
+
+      .last-digit-wrapper::after {
+            top: -55px;
+      }
+
+      .last-digit-wrapper::before {
+            bottom: -75px;
+      }
+}
+
+
+@media (max-width: 375px) {
+      .hero-content-main .hero-heading {
+            font-size: 43px;
+            line-height: 55px;
+      }
+
+      .hero-cards .hero-card-digit {
+            font-size: 58px;
+            line-height: 60px;
+            margin-bottom: 17px;
+      }
+
+      .recent-img {
+            height: 45px;
+            width: 45px;
+      }
+
+      .recent-left-content-main {
+            gap: 10px;
+      }
+
+      .recent-right-content-main .recent-time-text,
+      .recent-left-content-main .recent-text {
+            font-size: 9px;
+            line-height: 12px;
+      }
+
+      .hero-cards {
+            height: 225px;
+      }
+}

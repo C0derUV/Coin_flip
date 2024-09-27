@@ -1,0 +1,246 @@
+{
+  "version": "0.1.0",
+  "name": "newfliper",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "admin",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "state",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "startRound",
+      "docs": [
+        "Allows the admin to start a new round."
+      ],
+      "accounts": [
+        {
+          "name": "admin",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "state",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "round",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "participate",
+      "docs": [
+        "Allows users to participate in the current active round by paying 0.05 SOL."
+      ],
+      "accounts": [
+        {
+          "name": "admin",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "participant",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "state",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "round",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "distributePrizes",
+      "accounts": [
+        {
+          "name": "admin",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "state",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "round",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "newRound",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "randomness",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "State",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "admin",
+            "type": "publicKey"
+          },
+          {
+            "name": "currentRound",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Round",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "id",
+            "type": "u64"
+          },
+          {
+            "name": "startTime",
+            "type": "i64"
+          },
+          {
+            "name": "endTime",
+            "type": "i64"
+          },
+          {
+            "name": "totalCollected",
+            "type": "u64"
+          },
+          {
+            "name": "totalParticipants",
+            "type": "u64"
+          },
+          {
+            "name": "participants",
+            "type": {
+              "vec": "publicKey"
+            }
+          },
+          {
+            "name": "previousParticipants",
+            "type": {
+              "vec": "publicKey"
+            }
+          },
+          {
+            "name": "isActive",
+            "type": "bool"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "Unauthorized",
+      "msg": "Unauthorized"
+    },
+    {
+      "code": 6001,
+      "name": "RoundNotActive",
+      "msg": "Round is not active"
+    },
+    {
+      "code": 6002,
+      "name": "NoActiveRound",
+      "msg": "No active round"
+    },
+    {
+      "code": 6003,
+      "name": "RoundNotEnded",
+      "msg": "Round has not ended yet"
+    },
+    {
+      "code": 6004,
+      "name": "RoundAlreadyActive",
+      "msg": "Round is already active"
+    },
+    {
+      "code": 6005,
+      "name": "Overflow",
+      "msg": "Overflow"
+    },
+    {
+      "code": 6006,
+      "name": "WinnerAccountNotProvided",
+      "msg": "Winner account not provided"
+    },
+    {
+      "code": 6007,
+      "name": "NotEnoughParticipants",
+      "msg": "Not enough participants"
+    }
+  ],
+  "metadata": {
+    "address": "D8wa3hnC8GxvKTtiw2F6DLEqmBd9Ncd3vJgFhwSwH6Fx"
+  }
+}
